@@ -1,0 +1,19 @@
+@import url("./index.scss");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+}
+.grid-auto-cols {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.grid-gap-1 {
+  gap: 1rem;
+}
+.mblock-top-10 {
+  margin-block: 10px;
+}

@@ -1,0 +1,12 @@
+.dialog-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: end;
+  justify-content: space-between;
+  .dialog-title {
+    width: 100%;
+  }
+  .dialog-icon {
+    cursor: pointer;
+  }
+}

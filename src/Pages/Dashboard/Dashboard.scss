@@ -1,0 +1,35 @@
+$gray-200: #eff2f5;
+
+.dashboard-details-wrapper {
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-gap: 10px;
+  height: 100vh;
+  padding: 1.5rem;
+  .dashboard-detail-info {
+    border-right: 1px solid $gray-200;
+    .info-heading {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .info-coin-name {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        font-family: inherit;
+      }
+    }
+    .coin-price {
+      font-size: 2rem;
+      letter-spacing: 10px;
+      font-weight: 700;
+      margin-block: 10px;
+    }
+    .details-button {
+      background-color: transparent;
+      box-shadow: none;
+      color: inherit;
+      outline: 2px solid $gray-200;
+      border-radius: 4px;
+    }
+  }
+}

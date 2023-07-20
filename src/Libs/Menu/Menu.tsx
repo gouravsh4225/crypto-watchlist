@@ -1,0 +1,24 @@
+import * as React from "react";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+
+export default function CryptoMenu(props: any) {
+  const { buttonIcon } = props;
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <div>
+      <Button onClick={handleClick}>{buttonIcon}</Button>
+      <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
+        {props.children}
+      </Menu>
+    </div>
+  );
+}
